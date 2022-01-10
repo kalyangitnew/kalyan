@@ -10,3 +10,14 @@ ansible -i inv all -u centos -k -m ansible.builtin.yum -a "name=nginx state=pres
 for starting nginx service
 ansible -i inv all -u centos -k -m ansible.builtin.systemd -a "name=nginx state=started" -b
 
+
+EXAMPLE OF ANSIBLE PLAY BOOKS:
+- hosts: DATABASES
+  tasks:
+    - ansible.builtin.debug:
+        msg: "hello kalyan"
+- name :Play 2
+  hosts: APPLICATION
+  roles:
+    - roleA
+    - roleB
