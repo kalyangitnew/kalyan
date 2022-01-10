@@ -4,3 +4,5 @@ ansible -i inv db --list-hostsi
 create a inventory file with inv with private ip of ansible worker node
 ansible -i inv all -u centos -k -m ansible.builtin.ping
 
+for installing nginx
+ansible -i inv all -u centos -k -m ansible.builtin.yum -a "name=nginx state=present" -b
