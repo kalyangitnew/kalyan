@@ -1,0 +1,3 @@
+nsible -i inv ping all
+ansible -i inv db --list-hostsi
+
