@@ -1,3 +1,6 @@
 nsible -i inv ping all
 ansible -i inv db --list-hostsi
 
+create a inventory file with inv with private ip of ansible worker node
+ansible -i inv -u centos -k DevOps321 -m ansible.builtin.ping 
+
