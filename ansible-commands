@@ -6,3 +6,7 @@ ansible -i inv all -u centos -k -m ansible.builtin.ping
 
 for installing nginx
 ansible -i inv all -u centos -k -m ansible.builtin.yum -a "name=nginx state=present" -b
+
+for starting nginx service
+ansible -i inv all -u centos -k -m ansible.builtin.systemd -a "name=nginx state=started" -b
+
