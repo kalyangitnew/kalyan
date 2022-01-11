@@ -31,6 +31,10 @@ task level
 inv level
 cli level
 
+----------? ansible-playbook -i ../inv -u centos -k 02-vars-playbook.yml -b -e URL=www.google.com
+.
+
+
 
 
 
