@@ -21,3 +21,26 @@ EXAMPLE OF ANSIBLE PLAY BOOKS:
   roles:
     - roleA
     - roleB
+
+----------> ansible-playbook -i ../inv -u centos -k 01-sample-playbook.yml -b
+
+we have 5 types of level variables
+play level
+variables from file
+task level
+inv level
+cli level
+
+
+
+
+
+
+
+
+
+
+
+
+
+
